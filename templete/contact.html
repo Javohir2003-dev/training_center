@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Information Technology</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static '' %}css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static '' %}css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static '' %}css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Information Technology
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'why'%}"> Why us </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'trainer' %}"> Programmers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}"> Contact Us</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static '' %}images/1.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+            <!-- <form action="">
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form> -->
+            
+            <form method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit">Send</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+
+  <!-- Info Section -->
+  <section class="info_section py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/email.png' %}" alt="email" class="info_icon">
+            </div>
+            <p class="info_text">AYTI@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/telephone.png' %}" alt="Phone" class="info_icon">
+            </div>
+            <p class="info_text">+998910302019</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/telegram.png' %}" alt="telegram" class="info_icon">
+            </div>
+            <p class="info_text">Information_Technology</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/instagram-logo.png' %}" alt="Instagram" class="info_icon">
+            </div>
+            <p class="info_text">technology_manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Info Section -->
+  
+
+  
+  <!-- CSS -->
+  <style>
+    /* Info Section Styling */
+    .info_section {
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      color: white;
+    }
+    .info_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .info_item:hover {
+      transform: scale(1.1);
+    }
+  
+    /* Ikonalarni o‘ngdan chapga harakatlantirish */
+    .icon_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: moveLeftRight 3s ease-in-out infinite alternate;
+    }
+  
+    .info_icon {
+      width: 35px;
+      height: 35px;
+      filter: invert(1);
+      transition: transform 0.3s, filter 0.3s;
+    }
+  
+    .info_item:hover .info_icon {
+      transform: scale(1.2);
+      filter: invert(1) brightness(1.5);
+    }
+  
+    /* O‘ngdan chapga yurish animatsiyasi */
+    @keyframes moveLeftRight {
+      0% {
+        transform: translateX(15px);
+      }
+      100% {
+        transform: translateX(-15px);
+      }
+    }
+  
+    .info_text {
+      opacity: 0.8;
+      transition: opacity 0.3s, color 0.3s;
+    }
+    .info_text:hover {
+      opacity: 1;
+      color: #f8d210;
+    }
+  
+    /* Footer */
+    .footer_section {
+      background-color: #181a1b;
+    }
+    .footer_link {
+      color: #f8d210;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer_link:hover {
+      color: #ffffff;
+    }
+  </style>
+  
+
+
+
+
+
+
+  
+  
+  
+
+
+  <script src="{% static '' %}js/jquery-3.4.1.min.js"></script>
+  <script src="{% static '' %}js/bootstrap.js"></script>
+
+</body>
+
+</html>

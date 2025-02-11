@@ -1,0 +1,570 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Information Technology</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static '' %}css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static '' %}css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static '' %}css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Information Technology
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'why'%}"> Why us </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'trainer' %}"> Programmers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}"> Contact Us</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <div>
+                      <h2>
+                        Information
+                      </h2>
+                      <h1>
+                        Technology
+                      </h1>
+                    <p>
+                      There are several main reasons for the high demand in the information technology market,Today, almost every business and organization is moving to digital systems. Banks, trading companies, educational institutions and even government organizations are in need of IT specialists.
+                    </p>
+                    <div class="">
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <div>
+                      <h2>
+                        Information
+                      </h2>
+                      <h1>
+                        Technology
+                      </h1>
+                    <p>
+                      Due to the rapid development of IT, the demand for specialists in this direction will only increase. In order to find a job, earn a good income and get one of the professions of the future, you need to act now.
+                    </p>
+                    <div class="">
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h2>
+                      Information
+                    </h2>
+                    <h1>
+                      Technology
+                    </h1>
+                    <p>
+                      The IT industry is more flexible than other industries, which creates a great opportunity for many professionals and those who want to learn.                    </p>
+                    <div class="">
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+
+        </ol>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- Us section -->
+
+  <section class="us_section layout_padding bg-light py-5">
+    <div class="container">
+      <div class="heading_container text-center mb-5">
+        <h2 class="fw-bold text-dark">Why Choose Us</h2>
+      </div>
+      <div class="us_container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="box p-4 text-center shadow-sm rounded-4 bg-white">
+              <div class="img-box mb-3">
+                <img src="{% static '' %}images/odamlar.png" alt="United team" class="img-fluid w-50">
+              </div>
+              <div class="detail-box">
+                <h5 class="fw-semibold text-primary">United team</h5>
+                <p class="text-muted">We have a very strong team</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="box p-4 text-center shadow-sm rounded-4 bg-white">
+              <div class="img-box mb-3">
+                <img src="{% static '' %}images/teacher.png" alt="Teachers" class="img-fluid w-50">
+              </div>
+              <div class="detail-box">
+                <h5 class="fw-semibold text-primary">Teachers</h5>
+                <p class="text-muted">We have very strong teachers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="box p-4 text-center shadow-sm rounded-4 bg-white">
+              <div class="img-box mb-3">
+                <img src="{% static '' %}images/ish.png" alt="Work" class="img-fluid w-50">
+              </div>
+              <div class="detail-box">
+                <h5 class="fw-semibold text-primary">Work</h5>
+                <p class="text-muted">We employ well-educated students</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="box p-4 text-center shadow-sm rounded-4 bg-white">
+              <div class="img-box mb-3">
+                <img src="{% static '' %}images/soat.png" alt="Short term" class="img-fluid w-50">
+              </div>
+              <div class="detail-box">
+                <h5 class="fw-semibold text-primary">Short term</h5>
+                <p class="text-muted">Get quality education in a short time with us</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <style>
+    .us_section {
+  background-color: #1d1e1e;
+  padding: 60px 0;
+}
+
+.box {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #403e3e;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-box img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover .img-box img {
+  transform: scale(1.1);
+}
+
+h5 {
+  color: #007bff;
+}
+
+.text-muted {
+  font-size: 14px;
+  color: #6c757d !important;
+}
+
+  </style>
+
+  <!-- end us section -->
+
+
+  <!-- heathy section -->
+
+  <section class="heathy_section layout_padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="detail-box">
+            <h2>
+              Modern Industries: On the Road to Innovation and Development
+            </h2>
+            <p>
+              The development of modern industries opens the door to new opportunities for mankind. Artificial intelligence, biotechnology, IT, cyber security and space technologies are affecting various areas of society and serving to improve future life. Innovations and advanced technologies remain the main driving force of development and create opportunities for humanity to achieve new achievements.
+            </p>
+            <div class="btn-box">
+              <a href="">
+                READ MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end heathy section -->
+
+  <!-- trainer section -->
+
+  <section class="trainer_section layout_padding">
+    <div class="container">
+      <div class="heading_container text-center">
+        <h2>We are IT specialists</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="box">
+            <div class="content">
+              <h5>Orziqulov Javohir</h5>
+            </div>
+            <div class="img-box">
+              <img src="{% static '' %}images/Javohir_teacher.jpg" alt="Orziqulov Javohir">
+            </div>
+            <div class="social_box">
+              <a href="#"><img src="{% static '' %}images/facebook.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/telegram.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="box">
+            <div class="content">
+              <h5>Botir Ziyatov</h5>
+            </div>
+            <div class="img-box">
+              <img src="{% static '' %}images/Botir_Ziyotov.png" alt="Botir Ziyatov">
+            </div>
+            <div class="social_box">
+              <a href="#"><img src="{% static '' %}images/facebook.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/telegram.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+          <div class="box">
+            <div class="content">
+              <h5>Mohirdev</h5>
+            </div>
+            <div class="img-box">
+              <img src="{% static '' %}images/mohirdev.png" alt="Mohirdev">
+            </div>
+            <div class="social_box">
+              <a href="#"><img src="{% static '' %}images/facebook.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/telegram.png" alt=""></a>
+              <a href="#"><img src="{% static '' %}images/instagram.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .trainer_section {
+      padding: 50px 0;
+      background: #1a1b1c;
+    }
+    .box {
+      background: #0d0d0d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 320px; /* Kattalashtirdim */
+    }
+    .img-box {
+      width: 200px; /* Kattalashtirdim */
+      height: 200px; /* Kattalashtirdim */
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .content {
+      margin-bottom: 10px;
+    }
+    .content h5 {
+      font-size: 20px; /* Kattalashtirdim */
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .social_box {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .social_box a img {
+      width: 35px; /* Kattalashtirdim */
+      transition: 0.3s;
+    }
+    .social_box a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+  
+
+  <!-- end trainer section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="{% static '' %}images/1.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+
+  <!-- Info Section -->
+  <section class="info_section py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/email.png' %}" alt="email" class="info_icon">
+            </div>
+            <p class="info_text">AYTI@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/telephone.png' %}" alt="Phone" class="info_icon">
+            </div>
+            <p class="info_text">+998910302019</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/telegram.png' %}" alt="telegram" class="info_icon">
+            </div>
+            <p class="info_text">Information_Technology</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_item">
+            <div class="icon_wrapper">
+              <img src="{% static 'images/instagram-logo.png' %}" alt="Instagram" class="info_icon">
+            </div>
+            <p class="info_text">technology_manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Info Section -->
+  
+
+  
+  <!-- CSS -->
+  <style>
+    /* Info Section Styling */
+    .info_section {
+      background: linear-gradient(135deg, #000000, #1c1c1c);
+      color: white;
+    }
+    .info_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .info_item:hover {
+      transform: scale(1.1);
+    }
+  
+    /* Ikonalarni o‘ngdan chapga harakatlantirish */
+    .icon_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      animation: moveLeftRight 3s ease-in-out infinite alternate;
+    }
+  
+    .info_icon {
+      width: 35px;
+      height: 35px;
+      filter: invert(1);
+      transition: transform 0.3s, filter 0.3s;
+    }
+  
+    .info_item:hover .info_icon {
+      transform: scale(1.2);
+      filter: invert(1) brightness(1.5);
+    }
+  
+    /* O‘ngdan chapga yurish animatsiyasi */
+    @keyframes moveLeftRight {
+      0% {
+        transform: translateX(15px);
+      }
+      100% {
+        transform: translateX(-15px);
+      }
+    }
+  
+    .info_text {
+      opacity: 0.8;
+      transition: opacity 0.3s, color 0.3s;
+    }
+    .info_text:hover {
+      opacity: 1;
+      color: #f8d210;
+    }
+  
+    /* Footer */
+    .footer_section {
+      background-color: #181a1b;
+    }
+    .footer_link {
+      color: #f8d210;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer_link:hover {
+      color: #ffffff;
+    }
+  </style>
+  
+
+  <script src="{% static '' %}js/jquery-3.4.1.min.js"></script>
+  <script src="{% static '' %}js/bootstrap.js"></script>
+
+</body>
+
+</html>
+>>>>>>> 0984425 (1-commit)
