@@ -8,6 +8,19 @@ from .forms import ContactForm
 
 class Index_View(TemplateView):
 	template_name = 'index.html'
+
+	def get_context_data(self, **kwargs):
+		context = super().get_context_data(**kwargs)
+		context['form'] = ContactForm()
+		return context
+	
+
+	def post(self,request, *args, **kwargs):
+		form = ContactForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return redirect('keraksiz')
+		return self.render_to_response({'form':form})
 	
 
 

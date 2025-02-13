@@ -93,33 +93,46 @@
                 Contact Us
               </h2>
             </div>
-            <!-- <form action="">
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  Send
-                </button>
-              </div>
-            </form> -->
-            
-            <form method="post">
+            <form method="post" class="p-4 shadow rounded bg-white border" style="max-width: 500px; margin: auto;">
               {% csrf_token %}
-              {{ form.as_p }}
-              <button type="submit">Send</button>
-            </form>
-            
-          </div>
+              <div class="mb-3 position-relative">
+                  <label class="form-label fw-bold text-dark">Name</label>
+                  <div class="input-container">
+                      <input type="text" name="name" class="form-control">
+                      <span class="loading-spinner"></span>
+                  </div>
+              </div>
+          
+              <div class="mb-3 position-relative">
+                  <label class="form-label fw-bold text-dark">Email</label>
+                  <div class="input-container">
+                      <input type="email" name="email" class="form-control">
+                      <span class="loading-spinner"></span>
+                  </div>
+              </div>
+          
+              <div class="mb-3 position-relative">
+                  <label class="form-label fw-bold text-dark">Phone</label>
+                  <div class="input-container">
+                      <input type="text" name="phone" class="form-control">
+                      <span class="loading-spinner"></span>
+                  </div>
+              </div>
+          
+              <div class="mb-3 position-relative">
+                  <label class="form-label fw-bold text-dark">Message</label>
+                  <div class="input-container">
+                      <textarea name="message" class="form-control" rows="4"></textarea>
+                      <span class="loading-spinner"></span>
+                  </div>
+              </div>
+          
+              <button type="submit" class="btn btn-dark w-100">Send</button>
+          </form>
+          
+          
+          
+          
         </div>
       </div>
     </div>
@@ -246,6 +259,51 @@
     .footer_link:hover {
       color: #ffffff;
     }
+  </style>
+  <style>
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.loading-spinner {
+    position: absolute;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid transparent;
+    border-top: 2px solid black;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.input-container input:focus + .loading-spinner,
+.input-container textarea:focus + .loading-spinner {
+    opacity: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
   </style>
   
 
